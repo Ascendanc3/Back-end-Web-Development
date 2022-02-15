@@ -3,6 +3,7 @@ const moment = require('moment');
 const homepage = require('./homepage')
 const { fstat } = require('fs');
 const users = require('./users')
+const about = require('./members')
 
 
 
@@ -35,6 +36,8 @@ const server = http.createServer((req, res) => {
         const fs = require('fs');
         res.write(fs.readFileSync('./index.html'));
     }
+
+    res.end();
 })/*.listen(3000)*/;
 
 const hostname = 'localhost' // atau localhost
