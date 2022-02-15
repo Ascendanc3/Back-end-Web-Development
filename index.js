@@ -2,6 +2,8 @@ const http = require('http');
 const moment = require('moment');
 const homepage = require('./homepage')
 const { fstat } = require('fs');
+const users = require('./users')
+
 
 
 const server = http.createServer((req, res) => {
@@ -35,8 +37,8 @@ const server = http.createServer((req, res) => {
     }
 })/*.listen(3000)*/;
 
-const hostname = '127.0.0.1' // atau localhost
+const hostname = 'localhost' // atau localhost
 const port = 3000;
 server.listen(port, hostname, () => {
-    console.log(`Server running at https://${hostname}:${port}/`);
+    console.log(`Server running at http://${hostname}:${port}/`);
 });
