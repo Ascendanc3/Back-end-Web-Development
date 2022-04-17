@@ -1,29 +1,17 @@
 {
-  "name": "exercise-4",
+  "name": "Mongoose",
   "version": "1.0.0",
-  "description": "Exercise 3",
-  "main": "index.js",
+  "description": "",
+  "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "devStart": "nodemon script.js"
   },
-  "keywords": [
-    "aditpalingzpan"
-  ],
-  "author": "Kelompok 1",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "cors": "^2.8.5",
     "express": "^4.17.3",
-    "moment": "^2.29.1",
-    "morgan": "^1.10.0"
-  },
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Ascendanc3/Back-end-Web-Development.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Ascendanc3/Back-end-Web-Development/issues"
-  },
-  "homepage": "https://github.com/Ascendanc3/Back-end-Web-Development#readme"
+    "mongoose": "^6.2.10",
+    "nodemon": "^2.0.15"
+  }
 }
